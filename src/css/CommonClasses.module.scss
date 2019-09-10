@@ -1,0 +1,48 @@
+  .StopScrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .Title{
+
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+
+  }
+
+  .Paragraph{
+
+    margin: auto;
+
+    max-width: 1000px;
+
+    padding: 5px 10px 10px 10px;
+
+    text-align: justify;
+    text-indent: 20px;
+
+  }
+
+  
+  .AnimationMoveFromRightToCenter{
+  
+    animation: moveFromRightToCenter  0.5s 1 ease;
+  
+  }
+  
+  .AnimationMoveFromLeftToCenter{
+  
+    animation: moveFromLeftToCenter  0.5s 1 ease;
+  
+  }
+  
+  @keyframes moveFromLeftToCenter {
+    from {transform: translate(-100%, 0)}
+    to {transform: translate(0, 0)}
+  }
+  
+  @keyframes moveFromRightToCenter {
+    from {transform: translate(100%, 0)}
+    to {transform: translate(0, 0)}
+  }
